@@ -50,6 +50,11 @@ body {
 ul {
     writing-mode: vertical-rl;
     font-size: 18px;
-    width: 125px;
+    width: 730px;
     height: 144px;
+}
+
+ul li {
+    margin-left: 35px;
+    margin-right: 35px;
 }
