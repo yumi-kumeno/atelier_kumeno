@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    background-image: url("back.jpg");
+    background-image: url('../1x/back.jpg');
     background-size: cover;
 }
 
@@ -45,4 +45,11 @@ body {
 .title_container p.categories {
     font-size: 11px;
     padding-bottom: 5px;
+}
+
+ul {
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    width: 125px;
+    height: 144px;
 }
