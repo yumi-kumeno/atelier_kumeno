@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+}
+
+.title_container {
+    display: flex;
+    justify-content: left;
+    margin: 66px 55px 110px 360px;
+
+}
+
+.title_container img {
+    width: 131px;
+    height: 119px;
+    padding: 0 55px 0 0;
+}
+
+.title_container p {
+    text-align: left;
+}
+
+.title_container p.name {
+    font-size: 16px;
+    font-family: 'Hiragino Mincho ProN W6';
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.title_container p.content {
+    font-size: 40px;
+    font-family: Hiragino Mincho ProN W6;
+    padding-bottom: 11px;
+
+}
+
+.title_container p.english_title {
+    font-size: 14px;
+    font-family: 'Didot';
+    padding-bottom: 5px;
+}
+
+.title_container p.categories {
+    font-size: 11px;
+    padding-bottom: 5px;
+}
