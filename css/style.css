@@ -58,3 +58,96 @@ ul li {
     margin-left: 35px;
     margin-right: 35px;
 }
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 57px;
+    height: 57px;
+    background-color: #e50013;
+    cursor: pointer;
+    border: none;
+    margin: 0 0 0 118px;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 11px;
+    border-radius: 2px;
+
+}
+
+.fv {
+    position: relative;
+    display: inline-block;
+}
+
+.fv img {
+    width: 100%;
+    align-items: center;
+}
+
+
+.red_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #e50013;
+    transform: translateX(-100%);
+    transition: transform 0.4s;
+
+}
+
+.fv:hover .line {
+    transform: translateX(0);
+}
+
+.content {
+    display: flex;
+    justify-content: left;
+}
+
+.content img {
+    width: 7%;
+    margin: 96px 57px 170px 360px;
+}
+
+.content h2 {
+    text-align: left;
+    font-family: 'Hiragino Mincho ProN W6';
+    font-size: 40px;
+    letter-spacing: 0.24em;
+    margin: 124px 0px 172px;
+
+}
+
+.designlog01 img {
+    margin: 0px 0px 0px 300px;
+}
+
+.designlog01tag p {
+    font-size: 10px;
+
+}
+
+.designlog01title h3 {
+    font-size: 28px;
+    font-family: 'Hiragino Mincho ProN W6';
+}
+
+.designlog01senetence p {
+    font-size: 16px;
+    line-height: 194%;
+    width: 379px;
+    height: 50px;
+}
+
+.tools p {
+    font-size: 14px;
+}
