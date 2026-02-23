@@ -142,16 +142,12 @@ ul li {
 
 .designlog01tag p {
     font-size: 10px;
-    width: 200px;
-    height: 18px;
     margin-bottom: 11px;
 }
 
 .designlog01title h3 {
     font-size: 28px;
     font-family: 'Hiragino Mincho ProN W6';
-    width: 336px;
-    height: 35px;
     margin-bottom: 40px;
 }
 
@@ -168,9 +164,27 @@ ul li {
     margin-bottom: 22px;
 }
 
-.details p {
-    font-size: 14px;
-    border-bottom: 2px solid #1d1d1d;
+.details {
+    position: relative;
+}
+
+.details::before {
+    content: "";
     display: inline-block;
-    margin: 0 0 0 339px;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 90px;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #1d1d1d;
+}
+
+.more p {
+    margin: 18px 0px 0px 336px;
+}
+
+.more img {
+    margin: 0px -7px 0px 418px;
+
 }
