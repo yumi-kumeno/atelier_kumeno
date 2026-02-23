@@ -127,18 +127,32 @@ ul li {
 
 }
 
+.designlog01 {
+    display: flex;
+    justify-content: left;
+}
+
 .designlog01 img {
     margin: 0px 0px 0px 300px;
 }
 
+.designlog01ex p {
+    text-align: left;
+}
+
 .designlog01tag p {
     font-size: 10px;
-
+    width: 200px;
+    height: 18px;
+    margin-bottom: 11px;
 }
 
 .designlog01title h3 {
     font-size: 28px;
     font-family: 'Hiragino Mincho ProN W6';
+    width: 336px;
+    height: 35px;
+    margin-bottom: 40px;
 }
 
 .designlog01senetence p {
@@ -146,8 +160,17 @@ ul li {
     line-height: 194%;
     width: 379px;
     height: 50px;
+    margin-bottom: 20px;
 }
 
 .tools p {
     font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.details p {
+    font-size: 14px;
+    border-bottom: 2px solid #1d1d1d;
+    display: inline-block;
+    margin: 0 0 0 339px;
 }
