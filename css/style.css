@@ -180,11 +180,18 @@ ul li {
     background-color: #1d1d1d;
 }
 
+.more {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 .more p {
     margin: 18px 0px 0px 336px;
 }
 
 .more img {
-    margin: 0px -7px 0px 418px;
-
+    width: 10px;
+    height: 4px;
+    margin: 12px 0px 12px 0px;
 }
