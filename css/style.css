@@ -7,8 +7,10 @@ body {
 
 .title_container {
     display: flex;
-    justify-content: left;
-    margin: 66px 55px 110px 360px;
+    justify-content: space-evenly;
+    margin-top: 65px;
+    margin-bottom: 110px;
+    max-width: 1200px;
 
 }
 
@@ -50,8 +52,6 @@ body {
 ul {
     writing-mode: vertical-rl;
     font-size: 18px;
-    width: 730px;
-    height: 144px;
 }
 
 ul li {
@@ -69,10 +69,10 @@ ul li {
     background-color: #e50013;
     cursor: pointer;
     border: none;
-    margin: 0 0 0 118px;
 }
 
-.hamburger-line {
+.hamburger-line1,
+.hamburger-line2 {
     width: 100%;
     height: 2px;
     background-color: white;
@@ -81,41 +81,55 @@ ul li {
 
 }
 
+.hamburger-line3 {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+
+}
+
 .fv {
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
 
 .fv img {
     width: 100%;
-    align-items: center;
+    display: block;
+    height: auto;
 }
 
 
-.red_line {
+.fv::after {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 3px;
     background-color: #e50013;
-    transform: translateX(-100%);
-    transition: transform 0.4s;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 2s ease-in-out;
 
 }
 
-.fv:hover .line {
-    transform: translateX(0);
+.fv:hover::after {
+    transform: scaleX(1);
 }
+
+
 
 .content {
     display: flex;
-    justify-content: left;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .content img {
     width: 7%;
-    margin: 96px 57px 170px 360px;
 }
 
 .content h2 {
@@ -123,17 +137,16 @@ ul li {
     font-family: 'Hiragino Mincho ProN W6';
     font-size: 40px;
     letter-spacing: 0.24em;
-    margin: 124px 0px 172px;
+    padding-left: 56px;
 
 }
 
 .designlog01 {
     display: flex;
-    justify-content: left;
-}
-
-.designlog01 img {
-    margin: 0px 0px 0px 300px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .designlog01ex p {
@@ -142,7 +155,7 @@ ul li {
 
 .designlog01tag p {
     font-size: 10px;
-    margin-bottom: 11px;
+
 }
 
 .designlog01title h3 {
@@ -154,8 +167,6 @@ ul li {
 .designlog01senetence p {
     font-size: 16px;
     line-height: 194%;
-    width: 379px;
-    height: 50px;
     margin-bottom: 20px;
 }
 
@@ -174,7 +185,7 @@ ul li {
     position: absolute;
     left: 0;
     bottom: -7px;
-    width: 90px;
+    width: 92px;
     height: 1px;
     border-radius: 1px;
     background-color: #1d1d1d;
@@ -182,16 +193,17 @@ ul li {
 
 .more {
     display: flex;
+    justify-content: right;
     align-items: center;
     gap: 6px;
+
 }
 
 .more p {
-    margin: 18px 0px 0px 336px;
+    font-size: 14px;
 }
 
 .more img {
     width: 10px;
     height: 4px;
-    margin: 12px 0px 12px 0px;
 }
