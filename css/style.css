@@ -150,7 +150,7 @@ ul li {
 .designlog01,
 .designlog02 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -210,11 +210,21 @@ ul li {
 
 }
 
-.more p {
+.more2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+}
+
+
+.more p,
+.more2 p {
     font-size: 14px;
 }
 
-.more img {
+.more img,
+.more2 img {
     width: 10px;
     height: 4px;
 }
