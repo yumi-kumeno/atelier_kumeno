@@ -24,21 +24,21 @@ body {
     text-align: left;
 }
 
-.name p {
+.name {
     font-size: 16px;
     font-family: 'Hiragino Mincho ProN W6';
     padding-bottom: 5px;
     padding-top: 5px;
 }
 
-.content p {
+.title p:nth-child(2) {
     font-size: 40px;
-    font-family: ' Hiragino Mincho ProN W6';
+    font-family: 'Hiragino Mincho ProN W6';
     padding-bottom: 11px;
 
 }
 
-.english_title p {
+.english_title {
     font-size: 14px;
     font-family: 'Didot';
     padding-bottom: 5px;
@@ -121,16 +121,21 @@ ul li {
 }
 
 
+.designlog_outline {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
 
 .content {
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 5% 50% 10% 13%;
+    padding: 5% 0 10%;
 }
 
 .content img {
-    width: 7%;
+    width: 152px;
 }
 
 .content h2 {
@@ -142,7 +147,8 @@ ul li {
 
 }
 
-.designlog01 {
+.designlog01,
+.designlog02 {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -150,28 +156,32 @@ ul li {
     margin: 0 auto;
 }
 
-.designlog01ex p {
+.designlog01ex,
+.designlog02ex p {
     text-align: left;
 }
 
-.designlog01tag p {
+.designlog01tag,
+.designlog02tag {
     font-size: 10px;
 
 }
 
-.designlog01title h3 {
+.designlog01title,
+.designlog02title {
     font-size: 28px;
     font-family: 'Hiragino Mincho ProN W6';
     margin-bottom: 40px;
 }
 
-.designlog01senetence p {
+.designlog01senetence,
+.designlog02sentence {
     font-size: 16px;
     line-height: 194%;
     margin-bottom: 20px;
 }
 
-.tools p {
+.tools {
     font-size: 14px;
     margin-bottom: 22px;
 }
