@@ -174,7 +174,7 @@ ul li {
     margin-bottom: 40px;
 }
 
-.designlog01senetence,
+.designlog01sentence,
 .designlog02sentence {
     font-size: 16px;
     line-height: 194%;
@@ -210,21 +210,34 @@ ul li {
 
 }
 
-.more2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 6px;
-}
 
-
-.more p,
-.more2 p {
+.more p {
     font-size: 14px;
 }
 
-.more img,
-.more2 img {
+.more img {
     width: 10px;
     height: 4px;
+}
+
+.topbtn {
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+    background: #e50013;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+}
+
+.topbtn img {
+    width: 24px;
+    height: 10px;
+    padding: 24px 0 10px;
+}
+
+.topbtn p {
+    font-size: 13px;
+    color: #ffffff;
 }
