@@ -121,7 +121,9 @@ ul li {
 }
 
 
-.designlog_outline {
+.designlog_outline,
+.aboutmyself,
+.contact {
     max-width: 1200px;
     margin: 0 auto;
 
@@ -147,8 +149,8 @@ ul li {
 
 }
 
-.designlog01,
-.designlog02 {
+.designlog,
+.kumeno {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -156,26 +158,23 @@ ul li {
     margin: 0 auto;
 }
 
-.designlog01ex,
-.designlog02ex p {
+.designlogex,
+.kumenoex p {
     text-align: left;
 }
 
-.designlog01tag,
-.designlog02tag {
+.designlogtag {
     font-size: 10px;
 
 }
 
-.designlog01title,
-.designlog02title {
+.designlogtitle {
     font-size: 28px;
     font-family: 'Hiragino Mincho ProN W6';
     margin-bottom: 40px;
 }
 
-.designlog01sentence,
-.designlog02sentence {
+.designlogsentence {
     font-size: 16px;
     line-height: 194%;
     margin-bottom: 20px;
@@ -240,4 +239,39 @@ ul li {
 .topbtn p {
     font-size: 13px;
     color: #ffffff;
+}
+
+.viewbtn {
+    width: 290px;
+    height: 124px;
+    background: #e50013;
+    border-radius: 62px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.viewbtn img {
+    width: 24px;
+    height: 8px;
+    padding-right: 22px;
+}
+
+.viewbtn p {
+    font-size: 16px;
+    font-family: 'Hiragino Mincho ProN W6';
+    color: #ffffff;
+    letter-spacing: 0.2em;
+}
+
+.kumenoex h3 {
+    font-size: 32px;
+    font-family: 'Hiragino Mincho ProN W6';
+    padding-bottom: 40px;
+}
+
+.kumenoex p {
+    font-size: 18px;
+    line-height: 200%;
 }
