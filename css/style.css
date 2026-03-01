@@ -40,7 +40,9 @@ body {
 
 .english_title {
     font-size: 14px;
-    font-family: 'Didot';
+    font-family: "linotype-didot", serif;
+    font-weight: 400;
+    font-style: normal;
     padding-bottom: 5px;
 }
 
@@ -122,8 +124,7 @@ ul li {
 
 
 .designlog_outline,
-.aboutmyself,
-.contact {
+.aboutmyself {
     max-width: 1200px;
     margin: 0 auto;
 
@@ -276,16 +277,29 @@ ul li {
     line-height: 200%;
 }
 
+.contact .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .form {
     font-size: 16px;
-    line-height: 200%;
     margin: auto;
     text-align: center;
     background: #ffffff;
-    padding: 63px 0 32px 0;
-    width: 1240px;
+    padding: 63px 0 32px;
+    max-width: 1240px;
     height: 528px;
     border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.form>p {
+    margin-bottom: 30px;
+    line-height: 200%;
+
 }
 
 .formbtn {
@@ -296,7 +310,7 @@ ul li {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin-bottom: 30ox;
 }
 
 .formbtn p {
@@ -305,7 +319,19 @@ ul li {
     padding-right: 39px;
 }
 
+.formbtn.en p {
+    font-size: 16px;
+    font-family: "linotype-didot", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .formbtn img {
     width: 13px;
     height: 13px;
+}
+
+.footerwrap {
+    background-image: url('../1x/footer.png');
+    padding: 100px 0 50px;
 }
