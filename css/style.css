@@ -276,12 +276,13 @@ ul li {
     line-height: 200%;
 }
 
-
 .form {
     font-size: 16px;
+    line-height: 200%;
     margin: auto;
     text-align: center;
     background: #ffffff;
+    padding: 63px 0 32px 0;
     width: 1240px;
     height: 528px;
     border-radius: 20px;
@@ -304,15 +305,7 @@ ul li {
     padding-right: 39px;
 }
 
-.formbtnen p {
-    font-size: 16px;
-    color: #ffffff;
-    padding-right: 39px;
-    font-family: 'Didot';
-}
-
-.formbtn,
-.formbtnen img {
+.formbtn img {
     width: 13px;
     height: 13px;
 }
