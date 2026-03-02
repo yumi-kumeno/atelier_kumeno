@@ -51,13 +51,13 @@ body {
     padding-bottom: 5px;
 }
 
-ul {
+.title_container ul {
     writing-mode: vertical-rl;
     font-size: 18px;
     padding: 0% 3% 0% 20%;
 }
 
-ul li {
+.title_container li {
     margin-right: 35px;
 }
 
@@ -147,7 +147,6 @@ ul li {
     font-size: 40px;
     letter-spacing: 0.24em;
     padding-left: 56px;
-
 }
 
 .designlog,
@@ -166,7 +165,7 @@ ul li {
 
 .designlogtag {
     font-size: 10px;
-
+    padding: 56px 0 11px;
 }
 
 .designlogtitle {
@@ -277,6 +276,10 @@ ul li {
     line-height: 200%;
 }
 
+.anime {
+    margin: 170px auto 236px;
+}
+
 .contact .content {
     max-width: 1200px;
     margin: 0 auto;
@@ -310,8 +313,10 @@ ul li {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 30ox;
+    margin: 0 auto;
+    margin-bottom: 32px;
 }
+
 
 .formbtn p {
     font-size: 14px;
@@ -334,4 +339,20 @@ ul li {
 .footerwrap {
     background-image: url('../1x/footer.png');
     padding: 100px 0 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1225px;
+    margin: 40px auto 72px;
+}
+
+footer ul {
+    display: flex;
+
+}
+
+footer ul li {
+    padding-right: 45px;
 }
