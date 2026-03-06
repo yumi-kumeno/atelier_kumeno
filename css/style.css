@@ -158,6 +158,12 @@ body {
     margin: 0 auto;
 }
 
+.designlog,
+.kumeno img {
+    border-radius: 20px;
+    box-shadow: 30px 55px 30px 30px#51090e10;
+}
+
 .designlogex,
 .kumenoex p {
     text-align: left;
