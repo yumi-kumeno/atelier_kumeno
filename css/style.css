@@ -368,3 +368,39 @@ footer ul {
 footer ul li {
     padding-right: 45px;
 }
+
+@media screen and (max-width:767px) {
+    .title_container ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 130px;
+        background-color: #e50013;
+        cursor: pointer;
+        border: none;
+    }
+
+    .hamburger-line1,
+    .hamburger-line2 {
+        width: 67%;
+        height: 5px;
+        background-color: white;
+        margin-bottom: 20px;
+        border-radius: 5px;
+
+    }
+
+    .hamburger-line3 {
+        width: 67%;
+        height: 5px;
+        background-color: white;
+        border-radius: 5px;
+
+    }
+}
