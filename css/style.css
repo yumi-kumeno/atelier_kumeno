@@ -384,6 +384,7 @@ footer ul li {
         background-color: #e50013;
         cursor: pointer;
         border: none;
+        order: 1;
     }
 
     .hamburger-line1,
@@ -403,4 +404,51 @@ footer ul li {
         border-radius: 5px;
 
     }
+
+    .title_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title_container img {
+        width: 131px;
+        height: 119px;
+        padding: 0% 2% 0% 0%;
+    }
+
+    .title {
+        order: 3;
+    }
+
+    .title p {
+        text-align: left;
+    }
+
+    .name {
+        font-size: 16px;
+        font-family: 'Hiragino Mincho ProN W6';
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .title p:nth-child(2) {
+        font-size: 40px;
+        font-family: 'Hiragino Mincho ProN W6';
+        padding-bottom: 11px;
+
+    }
+
+    .english_title {
+        font-size: 14px;
+        font-family: "linotype-didot", serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-bottom: 5px;
+    }
+
+    .categories p {
+        font-size: 11px;
+        padding-bottom: 5px;
+    }
+
 }
