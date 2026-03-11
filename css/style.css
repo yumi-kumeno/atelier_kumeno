@@ -375,16 +375,8 @@ footer ul li {
     }
 
     .hamburger-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 130px;
         height: 130px;
-        background-color: #e50013;
-        cursor: pointer;
-        border: none;
-        order: 1;
     }
 
     .hamburger-line1,
