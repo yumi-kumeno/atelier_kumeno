@@ -26,14 +26,16 @@ body {
 
 .name {
     font-size: 16px;
-    font-family: 'Hiragino Mincho ProN W6';
+    font-family: hiragino-mincho-pron, sans-serif;
+    font-weight: 600;
     padding-bottom: 5px;
     padding-top: 5px;
 }
 
 .title p:nth-child(2) {
     font-size: 40px;
-    font-family: 'Hiragino Mincho ProN W6';
+    font-family: hiragino-mincho-pron, sans-serif;
+    font-weight: 600;
     padding-bottom: 11px;
 
 }
@@ -377,13 +379,16 @@ footer ul li {
     .hamburger-menu {
         width: 130px;
         height: 130px;
+        position: absolute;
+        z-index: 100;
+        top: 57px;
+        right: 60px;
     }
 
     .hamburger-line1,
     .hamburger-line2 {
         width: 67%;
         height: 5px;
-        background-color: white;
         margin-bottom: 20px;
         border-radius: 5px;
 
@@ -392,50 +397,30 @@ footer ul li {
     .hamburger-line3 {
         width: 67%;
         height: 5px;
-        background-color: white;
         border-radius: 5px;
 
     }
 
     .title_container {
-        display: flex;
-        flex-direction: column;
+        padding: 0;
     }
 
     .title_container img {
-        width: 131px;
-        height: 119px;
-        padding: 0% 2% 0% 0%;
-    }
-
-    .title {
-        order: 3;
-    }
-
-    .title p {
-        text-align: left;
+        width: 232px;
+        height: 212px;
     }
 
     .name {
-        font-size: 16px;
-        font-family: 'Hiragino Mincho ProN W6';
-        padding-bottom: 5px;
-        padding-top: 5px;
+        font-size: 24px;
     }
 
     .title p:nth-child(2) {
-        font-size: 40px;
-        font-family: 'Hiragino Mincho ProN W6';
-        padding-bottom: 11px;
+        font-size: 72px;
 
     }
 
     .english_title {
         font-size: 14px;
-        font-family: "linotype-didot", serif;
-        font-weight: 400;
-        font-style: normal;
-        padding-bottom: 5px;
     }
 
     .categories p {
@@ -443,4 +428,30 @@ footer ul li {
         padding-bottom: 5px;
     }
 
+    h1 {
+        position: absolute;
+        z-index: 100;
+        top: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .title {
+        position: absolute;
+        z-index: 100;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .content {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .content img {
+        width: 110px;
+        height: 50px;
+    }
 }
