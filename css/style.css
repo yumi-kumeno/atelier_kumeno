@@ -487,8 +487,11 @@ footer ul li {
     .kumeno {
         display: flex;
         flex-direction: column;
-        align-items: center;
         max-width: 600px;
+    }
+
+    .designlog:nth-child(odd) {
+        flex-direction: column-reverse;
     }
 
     .designlog>img,
@@ -496,31 +499,33 @@ footer ul li {
         width: 80%;
     }
 
-    .designlogex,
-    .kumenoex p {
-        text-align: left;
+    .designlogex {
+        width: 80%;
     }
 
     .designlogtag {
-        font-size: 10px;
+        font-size: 16px;
         padding: 56px 0 11px;
+        white-space: nowrap;
     }
 
     .designlogtitle {
-        font-size: 28px;
+        font-size: 40px;
         font-family: 'Hiragino Mincho ProN W6';
         margin-bottom: 40px;
+        white-space: nowrap;
     }
 
     .designlogsentence {
-        font-size: 16px;
+        font-size: 24px;
         line-height: 194%;
         margin-bottom: 20px;
     }
 
     .tools {
-        font-size: 14px;
+        font-size: 21px;
         margin-bottom: 22px;
+        white-space: nowrap;
     }
 
     .details {
@@ -528,59 +533,41 @@ footer ul li {
     }
 
     .details::before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: -7px;
-        width: 92px;
-        height: 1px;
-        border-radius: 1px;
-        background-color: #1d1d1d;
+        bottom: -12px;
+        width: 147px;
     }
 
     .more {
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        gap: 6px;
+        gap: 5px;
 
     }
 
 
     .more p {
-        font-size: 14px;
+        font-size: 24px;
     }
 
     .more img {
-        width: 10px;
-        height: 4px;
+        width: 18px;
+        height: 5px;
     }
 
 
 
     .viewbtn {
-        width: 290px;
-        height: 124px;
-        background: #e50013;
-        border-radius: 62px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: auto;
+        width: 367px;
+        height: 157px;
+        border-radius: 78px;
     }
 
     .viewbtn img {
-        width: 24px;
-        height: 8px;
+        width: 22px;
+        height: 7px;
         padding-right: 22px;
     }
 
     .viewbtn p {
-        font-size: 16px;
-        font-family: 'Hiragino Mincho ProN W6';
-        color: #ffffff;
-        letter-spacing: 0.2em;
+        font-size: 15px;
     }
 
 
@@ -588,7 +575,7 @@ footer ul li {
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
 
     .name {
         font-size: 20px;
@@ -610,4 +597,50 @@ footer ul li {
     .content h2 {
         font-size: 24px;
     }
+
+    .designlogtag {
+        font-size: 16px;
+        padding: 56px 0 11px;
+        white-space: nowrap;
+    }
+
+    .designlogtitle {
+        font-size: 28px;
+    }
+
+    .designlogsentence {
+        font-size: 18px;
+    }
+
+    .tools {
+        font-size: 12px;
+        margin-bottom: 22px;
+        white-space: nowrap;
+    }
+
+    .details {
+        position: relative;
+    }
+
+    .details::before {
+        width: 105px;
+        bottom: -6px;
+    }
+
+
+    .more p {
+        font-size: 16px;
+    }
+
+
+    .viewbtn {
+        width: 261px;
+        height: 117px;
+    }
+
+    .viewbtn p {
+        font-size: 15px;
+    }
+
+
 }
