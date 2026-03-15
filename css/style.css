@@ -283,6 +283,10 @@ body {
     letter-spacing: 0.2em;
 }
 
+.kumenoex {
+    width: 32%;
+}
+
 .kumenoex h3 {
     font-size: 32px;
     font-family: 'Hiragino Mincho ProN W6';
@@ -483,9 +487,7 @@ footer ul li {
         white-space: nowrap;
     }
 
-    .designlog,
-    .kumeno {
-        display: flex;
+    .designlog {
         flex-direction: column;
         max-width: 600px;
     }
@@ -570,9 +572,27 @@ footer ul li {
         font-size: 15px;
     }
 
+    .kumeno {
+        flex-direction: column-reverse;
+        max-width: 600px;
+    }
+
+    .kumenoex {
+        width: 80%;
+    }
+
+    .kumenoex h3 {
+        font-size: 48px;
+        white-space: nowrap;
+        margin-top: 50px;
+    }
+
+    .kumenoex p {
+        font-size: 14px;
+        line-height: 250%;
 
 
-
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -640,6 +660,16 @@ footer ul li {
 
     .viewbtn p {
         font-size: 15px;
+    }
+
+    .kumenoex h3 {
+        font-size: 36px;
+    }
+
+    .kumenoex p {
+        font-size: 12px;
+        line-height: 250%;
+
     }
 
 
