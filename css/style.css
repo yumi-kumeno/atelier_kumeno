@@ -490,6 +490,7 @@ footer ul li {
     .designlog {
         flex-direction: column;
         max-width: 600px;
+        margin-bottom: 80px;
     }
 
     .designlog:nth-child(odd) {
@@ -560,6 +561,7 @@ footer ul li {
         width: 367px;
         height: 157px;
         border-radius: 78px;
+        margin-top: 80px;
     }
 
     .viewbtn img {
@@ -717,6 +719,10 @@ footer ul li {
         font-size: 12px;
         line-height: 250%;
 
+    }
+
+    .contact .content {
+        max-width: 500px;
     }
 
 
