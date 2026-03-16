@@ -593,6 +593,53 @@ footer ul li {
 
 
     }
+
+    .anime {
+        margin: 170px auto 236px;
+    }
+
+    .contact .content {
+        max-width: 600px;
+    }
+
+    .form {
+        font-size: 14px;
+        padding: 90px 0;
+        max-width: 600px;
+        height: 910px;
+    }
+
+    .form>p {
+        margin-bottom: 30px;
+        line-height: 200%;
+
+    }
+
+    .formbtn {
+        width: 450px;
+        height: 150px;
+        border-radius: 75px;
+        margin-bottom: 81px;
+    }
+
+    .footerwrap {
+        background-image: url('../2x/sp_footer.png');
+        background-size: cover;
+    }
+
+    footer {
+        max-width: 750px;
+        margin: 40px auto 72px;
+    }
+
+    footer ul {
+        display: none;
+
+    }
+
+    footer p {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -672,5 +719,20 @@ footer ul li {
 
     }
 
+
+    .form {
+        max-width: 400px;
+    }
+
+    .formbtn {
+        width: 360px;
+        height: 120px;
+    }
+
+
+    footer {
+        max-width: 500px;
+        margin: 40px auto 72px;
+    }
 
 }
