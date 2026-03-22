@@ -17,6 +17,7 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 
@@ -32,18 +33,26 @@
                     <p class="english_title">YUMI KUMENO'S PORTFOLIO</p>
                     <p class="categories">ウェブデザイン／グラフィックデザイン</p>
                 </div>
-                <ul>
+                <ul class="pcmenu">
                     <li>おといあわせ</li>
                     <li>わたしはこんな人</li>
                     <li>デザインのきろく</li>
-
-
                 </ul>
-                <button class="hamburger-menu" aria-label="menu">
-                    <span class="hamburger-line1"></span>
-                    <span class="hamburger-line2"></span><span class="hamburger-line3
-                "></span>
+                <button class="hamburger-menu open" aria-label="menu">
+                    <span></span>
                 </button>
+
+                <div class="spmenu" style="display: block;">
+                    <img src="./SVG/hamburgerlogo.svg" alt="アトリエクメノのロゴ">
+                    <ul>
+                        <li>トップ</li>
+                        <li>おといあわせ</li>
+                        <li>わたしはこんな人</li>
+                        <li>デザインのきろく</li>
+                    </ul>
+                </div>
+
+
             </div>
         </header>
         <div class="fv">
@@ -327,7 +336,13 @@
         <p>©︎2026 ATELIER KUMENO</p>
     </footer>
 
+    <script>$(function () {
+            $('.hamburger-menu').on('click', function () { $('.hamburger-menu').toggleClass('open') }
+            )
+            $('spmenu').fadeToggle();
 
+        }
+        )</script>
 </body>
 
 

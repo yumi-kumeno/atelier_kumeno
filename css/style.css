@@ -53,45 +53,25 @@ body {
     padding-bottom: 5px;
 }
 
-.title_container ul {
+.pcmenu {
     writing-mode: vertical-rl;
     font-size: 18px;
     padding: 0% 3% 0% 20%;
 }
 
-.title_container li {
+.pcmenu li {
     margin-right: 35px;
 }
 
 .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 57px;
-    height: 57px;
-    background-color: #e50013;
-    cursor: pointer;
-    border: none;
+    display: none;
 }
 
-.hamburger-line1,
-.hamburger-line2 {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    margin-bottom: 11px;
-    border-radius: 2px;
-
+.spmenu {
+    display: none;
 }
 
-.hamburger-line3 {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    border-radius: 2px;
 
-}
 
 .fv {
     position: relative;
@@ -174,6 +154,7 @@ body {
     font-size: 40px;
     letter-spacing: 0.24em;
     padding-left: 56px;
+
 }
 
 .designlog,
@@ -362,6 +343,7 @@ body {
     background-image: url('../1x/footerback.png');
     padding: 100px 0 50px;
     width: 100%;
+
 }
 
 footer {
@@ -381,37 +363,111 @@ footer ul li {
 }
 
 @media screen and (max-width:767px) {
-    .title_container ul {
+    .pcmenu {
         display: none;
     }
 
     .hamburger-menu {
-        width: 130px;
-        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        background-color: #e50013;
+        cursor: pointer;
+        border: none;
         position: absolute;
         z-index: 100;
         top: 3%;
         right: 7%;
     }
 
-    .hamburger-line1,
-    .hamburger-line2 {
-        width: 67%;
+    .hamburger-menu span {
+        display: block;
+        width: 82px;
         height: 5px;
-        margin-bottom: 20px;
+        background: white;
         border-radius: 5px;
+        position: relative;
+        top: 3px;
+
 
     }
 
-    .hamburger-line3 {
-        width: 67%;
+    .hamburger-menu span::before,
+    .hamburger-menu span::after {
+        content: "";
+        display: block;
+        width: 82px;
         height: 5px;
+        background: white;
         border-radius: 5px;
+        position: absolute;
+    }
 
+    .hamburger-menu span::before {
+        bottom: 25px;
+    }
+
+    .hamburger-menu span::after {
+        top: 25px;
+    }
+
+    .hamburger-menu.open {
+        background: transparent;
+    }
+
+    .hamburger-menu.open span {
+        background: transparent;
+    }
+
+    .hamburger-menu.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+        background: #1d1d1d;
+    }
+
+    .hamburger-menu.open span::after {
+        top: 0;
+        transform: rotate(135deg);
+        background: #1d1d1d;
+    }
+
+    .spmenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .spmenu img {
+        width: 300px;
+        height: 345px;
+        margin: 250px auto 93px;
+    }
+
+    .spmenu ul {
+        width: 100%;
+        height: 66vh;
+        background-image: url('../1x/hamburgermenuback.jpg');
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 190px;
+    }
+
+    .spmenu li {
+        font-size: 36px;
+        color: #ffffff;
+        line-height: 300%;
+        text-align: center;
     }
 
     .title_container {
         padding: 0;
+        bottom: 0;
     }
 
     .title_container img {
@@ -490,7 +546,7 @@ footer ul li {
     .designlog {
         flex-direction: column;
         max-width: 600px;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
     }
 
     .designlog:nth-child(odd) {
@@ -499,11 +555,11 @@ footer ul li {
 
     .designlog>img,
     .kumeno img {
-        width: 80%;
+        width: 90%;
     }
 
     .designlogex {
-        width: 80%;
+        width: 90%;
     }
 
     .designlogtag {
@@ -652,7 +708,7 @@ footer ul li {
     }
 
     .title p:nth-child(2) {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .topbtn {
@@ -668,23 +724,22 @@ footer ul li {
     }
 
     .designlogtag {
-        font-size: 16px;
+        font-size: 12px;
         padding: 56px 0 11px;
         white-space: nowrap;
     }
 
     .designlogtitle {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .designlogsentence {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .tools {
-        font-size: 12px;
+        font-size: 10px;
         margin-bottom: 22px;
-        white-space: nowrap;
     }
 
     .details {
