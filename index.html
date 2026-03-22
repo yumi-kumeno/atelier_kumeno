@@ -34,16 +34,16 @@
                     <p class="categories">ウェブデザイン／グラフィックデザイン</p>
                 </div>
                 <ul class="pcmenu">
-                    <li>おといあわせ</li>
-                    <li>わたしはこんな人</li>
-                    <li>デザインのきろく</li>
+                    <li><a href="#contact">おといあわせ</a></li>
+                    <li><a href="#aboutmyself">わたしはこんな人</a></li>
+                    <li><a href="#designlog_outline">デザインのきろく</a></li>
                 </ul>
-                <button class="hamburger-menu open" aria-label="menu">
+                <button class="hamburger-menu" aria-label="menu">
                     <span></span>
                 </button>
 
-                <div class="spmenu" style="display: block;">
-                    <img src="./SVG/hamburgerlogo.svg" alt="アトリエクメノのロゴ">
+                <div class="spmenu">
+                    <img src="./SVG/hamburgerlogo.svg" alt="ロゴ" style="width: 300px;height: 345px;padding: 190px;">
                     <ul>
                         <li>トップ</li>
                         <li>おといあわせ</li>
@@ -337,9 +337,12 @@
     </footer>
 
     <script>$(function () {
-            $('.hamburger-menu').on('click', function () { $('.hamburger-menu').toggleClass('open') }
+            $('.hamburger-menu').on('click', function () {
+                $('.hamburger-menu').toggleClass('open')
+                $('.spmenu').fadeToggle();
+            }
             )
-            $('spmenu').fadeToggle();
+
 
         }
         )</script>
