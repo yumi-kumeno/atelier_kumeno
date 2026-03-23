@@ -148,7 +148,8 @@ body {
 
 .content h2 {
     text-align: left;
-    font-family: 'Hiragino Mincho ProN W6';
+    font-family: hiragino-mincho-pron, sans-serif;
+    font-weight: 600;
     font-size: 40px;
     letter-spacing: 0.24em;
     padding-left: 56px;
@@ -188,7 +189,8 @@ body {
 
 .designlogtitle {
     font-size: 28px;
-    font-family: 'Hiragino Mincho ProN W6';
+    font-family: hiragino-mincho-pron, sans-serif;
+    font-weight: 600;
     margin-bottom: 40px;
 }
 
@@ -271,7 +273,8 @@ body {
 
 .kumenoex h3 {
     font-size: 32px;
-    font-family: 'Hiragino Mincho ProN W6';
+    font-family: hiragino-mincho-pron, sans-serif;
+    font-weight: 600;
     padding-bottom: 40px;
 }
 
@@ -569,7 +572,6 @@ footer ul li {
 
     .designlogtitle {
         font-size: 36px;
-        font-family: 'Hiragino Mincho ProN W6';
         margin-bottom: 40px;
         white-space: nowrap;
     }
@@ -681,8 +683,7 @@ footer ul li {
 
     .footerwrap {
         background-image: url('../1x/footerback_sp.png');
-        background-size: cover;
-        height: 1193px;
+        background-size: 100% 100%;
     }
 
     footer {
@@ -709,6 +710,15 @@ footer ul li {
 
     .title p:nth-child(2) {
         font-size: 36px;
+    }
+
+    .spmenu {
+        height: 88vh;
+    }
+
+    .spmenu ul {
+        height: 566px;
+        margin-top: -38px;
     }
 
     .topbtn {
@@ -788,6 +798,10 @@ footer ul li {
     .formbtn {
         width: 70%;
         height: 70%;
+    }
+
+    .footerwrap {
+        background-size: 100% 100%;
     }
 
     footer {
