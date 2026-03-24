@@ -81,9 +81,8 @@ body {
 }
 
 .fv img {
-    width: 100%;
-    display: block;
-    height: auto;
+    height: 1015px;
+    overflow: hidden;
 }
 
 
@@ -105,6 +104,11 @@ body {
     transform: scaleX(1);
 }
 
+.fvanimation img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 .topbtn {
     width: 79px;
@@ -332,6 +336,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+    gap: 30px;
     margin: 0 auto;
     margin-bottom: 32px;
 }
@@ -340,7 +345,7 @@ body {
 .formbtn p {
     font-size: 14px;
     color: #ffffff;
-    padding-right: 39px;
+    padding-right: 20px;
 }
 
 .formbtn.en p {
@@ -350,9 +355,11 @@ body {
     font-style: normal;
 }
 
+
 .formbtn img {
     width: 13px;
     height: 13px;
+    display: block;
 }
 
 .footerwrap {

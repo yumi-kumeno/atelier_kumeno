@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>atelier kumeno</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./icons/favicon.ico">
+
 
     <script>
         (function (d) {
@@ -20,6 +24,8 @@
         })(document);
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 </head>
 
@@ -59,10 +65,15 @@
             </div>
         </header>
         <div class="fv">
-            <picture>
+            <div class="fvanimation">
+                <img src="./1x/fv1.jpg" alt="キャッチ">
+                <img src="./1x/fv2.jpg" alt="わたしの写真">
+                <img src="./1x/fv3.jpg" alt="作品1">
+            </div>
+            <!-- <picture>
                 <source srcset="./2x/sp_fv.jpg" media="(max-width:767px)">
                 <img src="./1x/fv2.jpg" alt="わたしの写真">
-            </picture>
+            </picture> -->
         </div>
     </div>
 
@@ -310,11 +321,11 @@
                     <img src="./SVG/arrow_white2.svg" alt="斜め矢印">
                 </div>
                 <div class="formbtn en">
-                    <p>lieblichcheki@gmail.com</p>
+                    <p class="mail">lieblichcheki@gmail.com</p>
                     <img src="./SVG/arrow_white2.svg" alt="斜め矢印">
                 </div>
                 <div class="formbtn en">
-                    <p>Instagram</p>
+                    <p class="Instagram">Instagram</p>
                     <img src="./SVG/arrow_white2.svg" alt="斜め矢印">
                 </div>
 
@@ -344,9 +355,17 @@
 
 
         $(function () {
+
+
             $('.hamburger-menu').on('click', function () {
                 $('.hamburger-menu').toggleClass('open')
                 $('.spmenu').fadeToggle();
+            });
+            $('.fvanimation').slick({
+                autoplay: true,
+                autoplaySpeed: 10000,
+                dots: false,
+                arrows: false,
             });
         }
         )</script>
