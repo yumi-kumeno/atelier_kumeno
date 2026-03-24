@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./icons/favicon.ico">
+
     <script>
         (function (d) {
             var config = {
@@ -26,7 +27,7 @@
     <div style="position: relative;">
         <header>
             <div class="title_container">
-                <h1><img src="./SVG/logo.svg" alt="logo"></h1>
+                <h1 id="HEADER"><img src="./SVG/logo.svg" alt="logo"></h1>
 
                 <div class="title">
                     <p class="name">くめの ゆみ</p>
@@ -35,9 +36,9 @@
                     <p class="categories">ウェブデザイン／グラフィックデザイン</p>
                 </div>
                 <ul class="pcmenu">
-                    <li><a href="#contact">おといあわせ</a></li>
-                    <li><a href="#aboutmyself">わたしはこんな人</a></li>
-                    <li><a href="#designlog_outline">デザインのきろく</a></li>
+                    <li><a href="#CONTACT">おといあわせ</a></li>
+                    <li><a href="#MYSELF">わたしはこんな人</a></li>
+                    <li><a href="#DESIGN">デザインのきろく</a></li>
                 </ul>
                 <button class="hamburger-menu" aria-label="menu">
                     <span></span>
@@ -59,12 +60,10 @@
         </header>
         <div class="fv">
             <picture>
-                <source srcset="./2x/sp_fv.jpg" media="(max-width:767px)"><img src="./1x/fv2.jpg" alt="わたしの写真">
+                <source srcset="./2x/sp_fv.jpg" media="(max-width:767px)">
+                <img src="./1x/fv2.jpg" alt="わたしの写真">
             </picture>
-
         </div>
-
-
     </div>
 
 
@@ -72,7 +71,7 @@
    ">
         <div class="content">
             <img src="./SVG/symbol.svg" alt="水引">
-            <h2>デザインのきろく</h2>
+            <h2 id="DESIGN">デザインのきろく</h2>
         </div>
 
 
@@ -167,10 +166,9 @@
                 </p>
                 <p class="tools">イラストレーター／フォトショップ／デザイン</p>
                 <div class="more">
-                    <span class="details
-            ">
-                        <p>より詳しく</p>
-                    </span>
+                    <p><span class="details
+            "> </span>
+                        より詳しく</p>
                     <svg class="arrow" width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1.14 .42">
                         <defs>
                             <style>
@@ -256,7 +254,7 @@
     <section class="aboutmyself">
         <div class="content">
             <img src="./SVG/symbol.svg" alt="水引">
-            <h2>わたしはこんな人</h2>
+            <h2 id="MYSELF">わたしはこんな人</h2>
         </div>
         <div class="kumeno">
             <div class="kumenoex">
@@ -299,7 +297,7 @@
     <section class="contact">
         <div class="content">
             <img src="./SVG/symbol.svg" alt="水引">
-            <h2>おといあわせ</h2>
+            <h2 id="CONTACT">おといあわせ</h2>
         </div>
         <div class="footerwrap">
 
@@ -328,44 +326,28 @@
     </section>
     <footer>
         <ul>
-            <li>トップ</li>
-            <li>デザインのきろく</li>
-            <li>わたしはこんな人</li>
+            <li><a href="#HEADER">トップ</a></li>
+            <li><a href="#DESIGN">デザインのきろく</a></li>
+            <li><a href="MYSELF">わたしはこんな人</a></li>
         </ul>
         <p>©︎2026 ATELIER KUMENO</p>
     </footer>
-    <a href="#header">
-        <div class="topbtn">
+
+    <div class="topbtn"> <a href="#HEADER">
             <img src="./SVG/topbtn.svg" alt="上矢印">
             <p>トップ</p>
-    </a>
+        </a>
     </div>
 
 
-    <script>$(function () {
+    <script>
+
+
+        $(function () {
             $('.hamburger-menu').on('click', function () {
                 $('.hamburger-menu').toggleClass('open')
                 $('.spmenu').fadeToggle();
-            }
-            )
-            $(function () {
-                var topbtn = $('#header');
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 100) {
-                        topBtn.fadeIn();
-                    } else {
-                        topBtn.fadeOut();
-                    }
-                });
-
-                topBtn.click(function () {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 500);
-                    return false;
-                });
             });
-
         }
         )</script>
 </body>
