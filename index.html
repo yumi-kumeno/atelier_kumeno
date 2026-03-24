@@ -67,9 +67,6 @@
 
     </div>
 
-    <div class="topbtn"><img src="./SVG/topbtn.svg" alt="上矢印">
-        <p>トップ</p>
-    </div>
 
     <section class="designlog_outline
    ">
@@ -337,6 +334,13 @@
         </ul>
         <p>©︎2026 ATELIER KUMENO</p>
     </footer>
+    <a href="#header">
+        <div class="topbtn">
+            <img src="./SVG/topbtn.svg" alt="上矢印">
+            <p>トップ</p>
+    </a>
+    </div>
+
 
     <script>$(function () {
             $('.hamburger-menu').on('click', function () {
@@ -344,7 +348,23 @@
                 $('.spmenu').fadeToggle();
             }
             )
+            $(function () {
+                var topbtn = $('#header');
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        topBtn.fadeIn();
+                    } else {
+                        topBtn.fadeOut();
+                    }
+                });
 
+                topBtn.click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+            });
 
         }
         )</script>
