@@ -10,6 +10,8 @@ body {
     justify-content: space-between;
     align-items: start;
     padding: 3% 13% 5% 9%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .title_container img {
@@ -73,16 +75,8 @@ body {
 }
 
 
-
 .fv {
     position: relative;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.fv img {
-    height: 1015px;
-    overflow: hidden;
 }
 
 
@@ -96,7 +90,7 @@ body {
     background-color: #e50013;
     transform-origin: left;
     transform: scaleX(0);
-    transition: transform 2s ease-in-out;
+    transition: transform 10s ease-in-out;
 
 }
 
@@ -104,11 +98,6 @@ body {
     transform: scaleX(1);
 }
 
-.fvanimation img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 .topbtn {
     width: 79px;
@@ -276,12 +265,18 @@ body {
     letter-spacing: 0.2em;
 }
 
-.viewbtn.reverse:hover {
+.viewbtn:hover {
     background: #ffffff;
+}
+
+.viewbtn:hover p {
     color: #e50013;
 }
 
+.viewbtn:hover .arrow_white polyline {
+    stroke: #e50013;
 
+}
 
 .kumenoex {
     width: 32%;
@@ -385,6 +380,16 @@ footer ul li {
     padding-right: 45px;
 }
 
+@media screen and (min-width:768px) {
+    .fvamimation {
+        display: block;
+    }
+
+    .sp_fv {
+        display: none;
+    }
+}
+
 @media screen and (max-width:767px) {
     .pcmenu {
         display: none;
@@ -483,6 +488,14 @@ footer ul li {
         color: #ffffff;
         line-height: 300%;
         text-align: center;
+    }
+
+    .fvamimation {
+        display: none;
+    }
+
+    .sp_fv {
+        display: block;
     }
 
     .title_container {
