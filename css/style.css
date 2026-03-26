@@ -15,7 +15,6 @@ body {
 }
 
 .title_container img {
-    width: 131px;
     height: 120px;
     position: relative;
     z-index: 100;
@@ -157,7 +156,7 @@ body {
     font-weight: 600;
     font-size: 40px;
     letter-spacing: 0.24em;
-    padding-left: 56px;
+    padding: 44px 56px 10px;
 
 }
 
@@ -171,8 +170,16 @@ body {
     padding: 50px 20px 42px;
 }
 
-.designlog>img,
-.kumeno img {
+.responsive-picture img {
+    border-radius: 20px;
+    box-shadow: 30px 55px 30px 0 #51090e10;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.designlog>img {
     border-radius: 20px;
     box-shadow: 30px 55px 30px 0 #51090e10;
     width: 47%;
@@ -346,19 +353,28 @@ body {
 }
 
 
-.formbtn p {
+.contactform {
     font-size: 14px;
     color: #ffffff;
-    padding-right: 20px;
+    padding: 0 42px;
 }
 
-.formbtn.en p {
+.mail,
+.Instagram {
     font-size: 16px;
+    color: #ffffff;
     font-family: "linotype-didot", serif;
     font-weight: 400;
     font-style: normal;
 }
 
+.mail {
+    padding: 0 20px;
+}
+
+.Instagram {
+    padding: 0 73px;
+}
 
 .formbtn img {
     width: 13px;
