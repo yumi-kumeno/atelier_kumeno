@@ -487,7 +487,7 @@ footer ul li {
         position: absolute;
         top: 0;
         left: 0;
-        height: 96vh;
+        height: 80vh;
         width: 100%;
         z-index: 100;
         background-image: url('../1x/menuback.jpg');
@@ -499,7 +499,7 @@ footer ul li {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 42%;
+        margin-top: 56%;
     }
 
     .spmenu li {
