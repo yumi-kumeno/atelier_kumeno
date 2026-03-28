@@ -143,7 +143,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 5% 0 10% 3%;
+    padding: 7.5% 0 10% 3%;
 }
 
 .content img {
@@ -167,7 +167,7 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 20px 42px;
+    padding: 0 3% 22%;
 }
 
 .responsive-picture img {
@@ -185,6 +185,7 @@ body {
     width: 47%;
 }
 
+
 .designlogex {
     width: 36%;
 }
@@ -192,29 +193,30 @@ body {
 .designlogex,
 .kumenoex p {
     text-align: left;
+    margin: 0 0 5%;
 }
 
 .designlogtag {
     font-size: 10px;
-    padding: 56px 0 11px;
+    padding: 14% 0 4%;
 }
 
 .designlogtitle {
     font-size: 28px;
     font-family: hiragino-mincho-pron, sans-serif;
     font-weight: 600;
-    margin-bottom: 40px;
+    padding-bottom: 10%;
 }
 
 .designlogsentence {
     font-size: 16px;
     line-height: 194%;
-    margin-bottom: 20px;
+    padding-bottom: 5%;
 }
 
 .tools {
     font-size: 14px;
-    margin-bottom: 22px;
+    padding-bottom: 5.5%;
 }
 
 .details {
@@ -263,7 +265,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 80px auto;
+    margin: -4% auto 9%;
     cursor: pointer;
     transition: .4s cubic-bezier(0.30, 0, 0.70, 1);
 }
@@ -302,7 +304,7 @@ body {
     font-size: 32px;
     font-family: hiragino-mincho-pron, sans-serif;
     font-weight: 600;
-    padding-bottom: 40px;
+    padding-bottom: 10%;
 }
 
 .kumenoex p {
@@ -311,7 +313,7 @@ body {
 }
 
 .anime {
-    margin: 170px auto 236px;
+    margin: 11% auto 9%;
 }
 
 .contact .content {
@@ -381,6 +383,7 @@ body {
     height: 13px;
     display: block;
 }
+
 
 .footerwrap {
     background-image: url('../1x/footerback.png');
@@ -528,7 +531,6 @@ footer ul li {
     }
 
     .title_container img {
-        width: 212px;
         height: 232px;
     }
 
