@@ -10,11 +10,15 @@ body {
     justify-content: space-between;
     align-items: start;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 3% auto 4%;
 }
 
 .title_container img {
-    width: 132px;
+    height: 120px;
+}
+
+.title {
+    padding-left: 4%;
 }
 
 .title p {
@@ -54,11 +58,11 @@ body {
 .pcmenu {
     writing-mode: vertical-rl;
     font-size: 18px;
-    padding: 0% 3% 0% 20%;
+    padding-left: 45%;
 }
 
 .pcmenu li {
-    margin-right: 35px;
+    padding-right: 35px;
 }
 
 
@@ -398,11 +402,10 @@ footer {
 
 footer ul {
     display: flex;
-
 }
 
 footer ul li {
-    padding-right: 45px;
+    font-size: 17px;
 }
 
 @media screen and (max-width:767px) {
